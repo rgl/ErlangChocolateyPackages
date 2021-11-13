@@ -17,7 +17,7 @@ OTP is set of Erlang libraries and design principles providing middle-ware to de
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/smerchek/nugetpackages/raw/master/Erlang/erlang-logo.png</iconUrl>
     <packageSourceUrl>https://github.com/ElixirWin/ChocolateyPackages/tree/master/Erlang</packageSourceUrl>
-    <releaseNotes>https://erlang.org/download/OTP-24.0.README</releaseNotes>
+    <releaseNotes>https://github.com/erlang/otp/blob/OTP-24.1.5/README.md</releaseNotes>
     <docsUrl>http://erlang.org/doc/search/</docsUrl>
     <mailingListUrl>http://erlang.org/mailman/listinfo/erlang-questions</mailingListUrl>
     <bugTrackerUrl>https://bugs.erlang.org/secure/Dashboard.jspa</bugTrackerUrl>
