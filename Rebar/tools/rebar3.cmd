@@ -43,4 +43,3 @@ for %%r in ("%rebar_escript_path%") do @(set rebar_escript_path=%%~sr)
 @set erts_bin_dir=%erl_root%\%erts_dir_name%\bin
 @for %%e in ("%erts_bin_dir%") do set erts_bin_dir=%%~se
 @goto :eof
-
