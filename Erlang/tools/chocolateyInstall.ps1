@@ -4,34 +4,32 @@ An install script for installing Erlang silently on the machine via ChocolateyNu
 
 .NOTES
 Author: Onorio Catenacci - catenacci@ieee.org
-Version: 24.1.5
 #>
 
 $package = 'erlang'
-$version = '24.1.5'
-$erl_version = '12.1.5'
+$version = '25.0'
 
 $params = @{
   PackageName = $package
   FileType = 'exe'
   SilentArgs = '/S'
   Url = "https://github.com/erlang/otp/releases/download/OTP-$version/otp_win32_$version.exe"
-  CheckSum = 'ccc1e5918aefb543d2b5e7547c44e1b1ff66d62cd4ea74dd4782f694a6de8a44'
+  CheckSum = '413c89f923e4d426b26c4992f010f2d5b064b1169404ad22c444eb25be43c12c'
   CheckSumType = 'sha256'
   Url64 = "https://github.com/erlang/otp/releases/download/OTP-$version/otp_win64_$version.exe"
-  CheckSum64 = 'f13311ae26d5260566740f8a7f124d0ba3589a1f52aada84b236825641f53225'
+  CheckSum64 = 'f720bf4eb5f98304007252bd11816fc973aa5e9f53d0c4060f6875d0fdc40818'
   CheckSumType64 = 'sha256'
   validExitCodes = @(0)
 }
 
 Install-ChocolateyPackage @params
 
-$baseErlangPath = "$env:ProgramFiles\erl-$version\erts-$erl_version\bin"
+$baseErlangPath = Resolve-Path "$env:ProgramFiles\Erlang OTP\erts-*\bin"
 
-Generate-BinFile "ct_run" -path "$baseErlangPath\ct_run.exe"
-Generate-BinFile "erl" -path "$baseErlangPath\erl.exe"
-Generate-BinFile "werl" -path "$baseErlangPath\werl.exe"
-Generate-BinFile "erlc" -path "$baseErlangPath\erlc.exe"
-Generate-BinFile "escript" -path "$baseErlangPath\escript.exe"
-Generate-BinFile "dialyzer" -path "$baseErlangPath\dialyzer.exe"
-Generate-BinFile "typer" -path "$baseErlangPath\typer.exe"
+Generate-BinFile ct_run   -Path "$baseErlangPath\ct_run.exe"
+Generate-BinFile dialyzer -Path "$baseErlangPath\dialyzer.exe"
+Generate-BinFile erl      -Path "$baseErlangPath\erl.exe"
+Generate-BinFile erlc     -Path "$baseErlangPath\erlc.exe"
+Generate-BinFile escript  -Path "$baseErlangPath\escript.exe"
+Generate-BinFile typer    -Path "$baseErlangPath\typer.exe"
+Generate-BinFile werl     -Path "$baseErlangPath\werl.exe"

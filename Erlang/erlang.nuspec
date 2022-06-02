@@ -3,7 +3,7 @@
   <metadata>
     <id>erlang</id>
     <title>Erlang</title>
-    <version>24.0</version>
+    <version>25.0</version>
     <authors>Joe Armstrong,Robert Virding,Mike Williams</authors>
     <owners>Onorio Catenacci</owners>
     <summary>Erlang/OTP - for building concurrent, distributed, and fault tolerant systems</summary>
@@ -13,14 +13,14 @@ OTP is set of Erlang libraries and design principles providing middle-ware to de
     <projectUrl>http://www.erlang.org/</projectUrl>
     <tags>erlang languages</tags>
     <copyright>erlang.org</copyright>
-    <licenseUrl>http://www.erlang.org/EPLICENSE</licenseUrl>
+    <licenseUrl>https://github.com/erlang/otp/blob/OTP-25.0/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/smerchek/nugetpackages/raw/master/Erlang/erlang-logo.png</iconUrl>
     <packageSourceUrl>https://github.com/ElixirWin/ChocolateyPackages/tree/master/Erlang</packageSourceUrl>
-    <releaseNotes>https://github.com/erlang/otp/blob/OTP-24.1.5/README.md</releaseNotes>
+    <releaseNotes>https://github.com/erlang/otp/blob/OTP-25.0/README.md</releaseNotes>
     <docsUrl>http://erlang.org/doc/search/</docsUrl>
     <mailingListUrl>http://erlang.org/mailman/listinfo/erlang-questions</mailingListUrl>
-    <bugTrackerUrl>https://bugs.erlang.org/secure/Dashboard.jspa</bugTrackerUrl>
+    <bugTrackerUrl>https://github.com/erlang/otp/issues</bugTrackerUrl>
     <projectSourceUrl>https://github.com/erlang/otp</projectSourceUrl>
   </metadata>
 </package>
